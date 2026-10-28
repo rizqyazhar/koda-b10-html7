@@ -22,7 +22,7 @@ body {
 }
 
 .box-calc {
-  width: 25%;
+  width: fit-content;
   background-color: #fe9dc6;
   border: 2px solid #772c43;
   box-shadow: 2px 2px 0 0 #d6567f;
@@ -66,5 +66,19 @@ body {
 
 .box-buttons {
   grid-row: 5 / 13;
-  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 5px;
+}
+
+.key-btn {
+  background-color: #ceefff;
+  outline: none;
+  border: 2px solid #772c43;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0 0 #569bc5;
+  font-weight: 700;
+  font-size: 20px;
+  color: #772c43;
 }
