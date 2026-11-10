@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+      defer></script>
+    <script src="/index.js"></script>
   </head>
   <body>
     <div class="overlay">
@@ -32,28 +38,28 @@
     <div class="box-calc">
       <div class="box-display-border">
         <div class="box-display">
-          <p>18 x 3 + 8</p>
-          <p>62</p>
+          <p id="calc-display">18 x 3 + 8</p>
+          <p id="res-display">62</p>
         </div>
       </div>
       <div class="box-buttons">
-        <button class="key-btn">C</button>
+        <button id="clear-all" class="key-btn">C</button>
         <button class="key-btn">+/-</button>
-        <button class="key-btn">%</button>
-        <button class="key-btn">&divide;</button>
-        <button class="key-btn">7</button>
-        <button class="key-btn">8</button>
-        <button class="key-btn">9</button>
-        <button class="key-btn">&times;</button>
-        <button class="key-btn">4</button>
-        <button class="key-btn">5</button>
-        <button class="key-btn">6</button>
-        <button class="key-btn">-</button>
-        <button class="key-btn">1</button>
-        <button class="key-btn">2</button>
-        <button class="key-btn">3</button>
-        <button class="key-btn">+</button>
-        <button class="key-btn">
+        <button id="remainder" class="key-btn">%</button>
+        <button id="divide" class="key-btn">&divide;</button>
+        <button id="seven" class="key-btn">7</button>
+        <button id="eight" class="key-btn">8</button>
+        <button id="nine" class="key-btn">9</button>
+        <button id="times" class="key-btn">&times;</button>
+        <button id="four" class="key-btn">4</button>
+        <button id="five" class="key-btn">5</button>
+        <button id="six" class="key-btn">6</button>
+        <button id="minus" class="key-btn">-</button>
+        <button id="one" class="key-btn">1</button>
+        <button id="two" class="key-btn">2</button>
+        <button id="three" class="key-btn">3</button>
+        <button id="plus" class="key-btn">+</button>
+        <button id="clear" class="key-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -71,9 +77,9 @@
             <path d="m18 9-6 6" />
           </svg>
         </button>
-        <button class="key-btn">0</button>
-        <button class="key-btn">.</button>
-        <button class="key-btn">=</button>
+        <button id="zero" class="key-btn">0</button>
+        <button id="comma" class="key-btn">.</button>
+        <button id="calc" class="key-btn">=</button>
       </div>
     </div>
   </body>
